@@ -1,0 +1,94 @@
+*{
+	/* A universal CSS reset */
+	margin:0;
+	padding:0;
+}
+
+#navigationMenu li{
+	list-style:none;
+	height:40px;
+	padding:2px;
+	width:40px;
+}
+
+#navigationMenu .sides{
+	/* Container properties */
+	width:0;
+	left:40px;
+	padding:0;
+	position:absolute;
+	overflow:hidden;
+
+	/* Text properties */
+	/*font-family:'Myriad Pro',Arial, Helvetica, sans-serif;*/
+	/*font-size:18px;*/
+	/*font-weight:bold;*/
+	letter-spacing:0.6px;
+	white-space:nowrap;
+	line-height:40px;
+	
+	/* CSS3 Transition: */
+	-webkit-transition: 1s;
+	
+	/* Future proofing (these do not work yet): */
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+#navigationMenu a{
+	/*background:url('img/navigation.jpg') no-repeat;*/
+
+	height:40px;
+	width:40px;
+	display:block;
+	position:relative;
+}
+
+/* General hover styles */
+
+#navigationMenu a:hover .sides{ width:auto; padding:0 20px;overflow:visible; height:auto;}
+#navigationMenu a:hover{
+	text-decoration:none;
+	
+	/* CSS outer glow with the box-shadow property 
+	-moz-box-shadow:0 0 5px #9ddff5;
+	-webkit-box-shadow:0 0 5px #9ddff5;
+	box-shadow:0 0 5px #9ddff5;*/
+}
+
+/* Green Button */
+
+#navigationMenu .home {	/*background-position:0 0; background-color: rgba(0,174,116,0.8);*/}
+#navigationMenu .home:hover {	/*background-position:0 -39px; background-color: rgba(0,174,116,0.8);*/}
+#navigationMenu .home .sides{
+	background-color: rgba(0,174,116,0.8);;
+	color:#3d4f0c;
+	text-shadow:1px 1px 0 #99bf31;
+}
+
+/* The styles below are only needed for the demo page */
+
+#main{
+	float:left;
+	margin:0px auto;
+	position:absolute;
+	width:40px;
+}
+/*
+a, a:visited,a:active {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+*/
+a{
+	text-decoration:none;	
+}
+
+a:hover{
+	text-decoration:blink;
+}
+/*
+a img{
+	border:none;
+}*/
